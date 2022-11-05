@@ -8,6 +8,7 @@ const entry = async (path, xPath) => {
     throw new Error("Expected two arguments.");
   }
 
+  // compose list of XML files, then find XPath values
   const fileList = await readDirectories.composeFileList(path);
   const valueList = await readDirectories.composeValueList(fileList, xPath);
   return valueList;
