@@ -3,6 +3,7 @@ import * as helper from './helper.mjs';
 
 const entry = async (path, xPath) => {
 
+  // handle edge case where either path or xpath is not supplied
   if (helper.isEmpty(path) || helper.isEmpty(xPath)) {
     throw new Error("Expected two arguments.");
   }
