@@ -66,7 +66,9 @@ const composeValueList = async (fileList, xPath) => {
       dataPointer = dataPointer[xPathArray[i]];
     }
 
-    valueList.push({"path": file, "value": dataPointer});
+    if (dataPointer) {
+      valueList.push({"path": file, "value": dataPointer});
+    }
   }
 
 
