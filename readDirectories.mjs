@@ -2,6 +2,7 @@ import * as fs from 'fs/promises';
 import * as helper from './helper.mjs';
 import xml2js from 'xml2js';
 
+// searches the given path and all subdirectories for XML files, adds their paths to an array for processing
 const composeFileList = async (path) => {
 
   const fileList = new Array;
@@ -37,6 +38,7 @@ const composeFileList = async (path) => {
   return fileList;
 }
 
+// takes the previously created array of file paths and parses their XML data in search of the XPath value
 const composeValueList = async (fileList, xPath) => {
 
   const valueList = new Array;
