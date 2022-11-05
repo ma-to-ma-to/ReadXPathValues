@@ -1,8 +1,8 @@
 # ReadXPathValues
-When given an XPath and a local directory or file, will search full directory and find the XPath value for all existing XML files. This was made as an exercise which included requirements that I may refer to below.
+When given an XPath and a local directory or file, this will search full directory and find the XPath value for all existing XML files. This program was made as an exercise.
 
 ## How to Use
-The included requirements have asked for a "module whose default export should be an asynchronous function which crawls the directory tree and parses the XML files it finds." My assumption is it will be assessed by a grading program, which would import my solution. Because of this, I have included a script that allows for my solution to be run manually from the command line:
+The included requirements have asked for a "module whose default export should be an asynchronous function which crawls the directory tree and parses the XML files it finds." My assumption is it will be assessed by a grading program, which would import my solution. I have included a script that allows for my solution to be run manually from the command line:
 1. Download or clone this repository.
 2. Make sure Node.js is installed on your machine.
 3. Use a command line interface to navigate to the directory where you have put the local repository.
